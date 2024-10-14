@@ -17,7 +17,12 @@
       display: flex;
       justify-content: space-between;
     }
-    .navbar-left a, .navbar-right {
+    .navbar-left {
+      color: white;
+      padding: 14px 16px;
+      display: inline-block;
+    }
+    .navbar-right a {
       color: white;
       text-align: center;
       padding: 14px 16px;
@@ -69,12 +74,12 @@
 <body>
   <div class="navbar">
     <div class="navbar-left">
+      Vikrant Vilas Kamble
+    </div>
+    <div class="navbar-right">
       <a href="#home" onclick="showSection('home')">Home</a>
       <a href="#research" onclick="showSection('research')">Research</a>
       <a href="#teaching" onclick="showSection('teaching')">Teaching</a>
-    </div>
-    <div class="navbar-right">
-      Vikrant Vilas Kamble
     </div>
   </div>
   
