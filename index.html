@@ -99,13 +99,10 @@
 
     <div id="research" class="section hidden">
       <h2>Research</h2>
-      <p>Here are some papers I am currently working on:</p>
-
-
-      <h2>Publications</h2>
+      <h3>Publications</h3>
       <p>“Noncustodial parents, instrumental networks, and child support compliance” with Quentin H. Riser, Daniel R. Meyer, and Lawrence M. Berger. Social Science Research, Volume 110, February 2023, 102850</p>
-
-      <h2>Research in Progress</h2>
+      
+      <h3>Research in Progress</h3>
       <ol>
         <li>Intertemporal Elasticity of Labor Supply for Taxicab drivers: Evidence using a new instrument (USA) (co-authored)</li>
         <li>Labor Market Consequences of Cycling Program using DiD (Non-USA)</li>
@@ -137,17 +134,14 @@
 
   <script>
     function showSection(section) {
-      const sections = ['home', 'research', 'teaching', 'contact'];
+      const sections = ['home', 'about', 'research', 'teaching', 'contact'];
       sections.forEach(s => {
         document.getElementById(s).classList.add('hidden');
       });
-      if (section !== 'home') {
-        document.getElementById(section).classList.remove('hidden');
-      }
-      document.getElementById('home').classList.remove('hidden'); // Always show home section
+      document.getElementById(section).classList.remove('hidden');
     }
 
-    // Show home section by default on page load
+    // Show 'home' section by default on page load
     document.addEventListener('DOMContentLoaded', function() {
       showSection('home');
     });
