@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABC's Personal Webpage</title>
+  <title>Vikrant Vilas Kamble's Personal Webpage</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -14,14 +14,15 @@
     .navbar {
       background-color: #0a3d62;
       overflow: hidden;
+      display: flex;
+      justify-content: space-between;
     }
-    .navbar a {
-      float: left;
-      display: block;
+    .navbar-left a, .navbar-right {
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      display: inline-block;
     }
     .navbar a:hover {
       background-color: #ddd;
@@ -64,14 +65,19 @@
 </head>
 <body>
   <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <div class="navbar-left">
+      <a href="#home">Home</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+    </div>
+    <div class="navbar-right">
+      Vikrant Vilas Kamble
+    </div>
   </div>
   
   <div class="content">
     <div class="header">
-      <img src="https://via.placeholder.com/150" alt="ABC" class="profile-photo">
+      <img src="https://via.placeholder.com/150" alt="Vikrant Vilas Kamble" class="profile-photo">
       <div class="header-text">
         <h1>Hello, My name is Vikrant Vilas Kamble.</h1>
         <p>Welcome!</p>
@@ -85,11 +91,11 @@
     
     <div id="contact" class="section">
       <h2>Contact Information</h2>
-      <p>Email: [vvkamble@udel.edu]</p>
+      <p>Email: vvkamble@udel.edu</p>
       <div class="social-links">
-        <a href="[https://www.linkedin.com/in/vikrant-vilas-kamble-20779a134/]" target="_blank">LinkedIn</a>
-        <a href="[https://x.com/Vikrant_V_]" target="_blank">Twitter</a>
-        <a href="[https://scholar.google.com/citations?user=LGHCqEMAAAAJ&hl=en]" target="_blank">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/vikrant-vilas-kamble-20779a134/" target="_blank">LinkedIn</a>
+        <a href="https://x.com/Vikrant_V_" target="_blank">Twitter</a>
+        <a href="https://scholar.google.com/citations?user=LGHCqEMAAAAJ&hl=en" target="_blank">Google Scholar</a>
       </div>
     </div>
     
